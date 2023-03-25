@@ -25,7 +25,5 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
         // console.log(currentTotalBalance)
         depositField.value = ''
     }
-
     depositField.value = ''
-
 })
