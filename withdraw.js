@@ -27,6 +27,6 @@ document.getElementById("btn-withdraw").addEventListener('click', function () {
     if (currentTotalCheckBalance < 10) {
         alert('your balance almost finished')
     } else {
-        // alert('widraw succesfull')
+         // alert('widraw succesfull')
     }
 })
