@@ -16,10 +16,17 @@ document.getElementById("btn-withdraw").addEventListener('click', function () {
 
             const newTotalBalance = currentTotalBalance - newWithdraw
             totalBalance.innerText = newTotalBalance
-        } else {
+        }
+        else {
             alert('sorry!! unsufficient balance')
         }
     }
-    // console.log(newTotalBalance)
     withdrawInput.value = ''
+    const totalCheckBalance = document.getElementById('total-balance')
+    const currentTotalCheckBalance = parseFloat(totalCheckBalance.innerText)
+    if (currentTotalCheckBalance < 10) {
+        alert('your balance almost finished')
+    } else {
+        // alert('widraw succesfull')
+    }
 })
